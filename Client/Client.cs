@@ -24,7 +24,7 @@ namespace Client
         {
             Socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             Socket.Connect(IpPoint);
-            Console.WriteLine("Соединение установленно.");
+            Console.WriteLine("Соединение установленно!");
             Work = true;
 
             Task processingSend = new Task(ProcessingSend);
